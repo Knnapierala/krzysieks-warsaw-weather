@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import { WEATHER_API_URL, WEATHER_API_KEY, warsawLat, warsawLon } from "./api";
 
 function App() {
+  useEffect(() => {
+    fetch(
+      `${WEATHER_API_URL}/weather?lat=${warsawLat}&lon=${warsawLon}&appid=${WEATHER_API_KEY}`
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="main-title">Warsaw</h1>
     </div>
   );
 }
