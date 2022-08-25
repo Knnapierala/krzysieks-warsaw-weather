@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { WEATHER_API_URL, WEATHER_API_KEY, warsawLat, warsawLon } from "./api";
+import { WEATHER_API_URL, warsawLat, warsawLon } from "./api";
 
 function App() {
   useEffect(() => {
@@ -10,7 +10,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => console.log(data));
   }, []);
-
+  console.log(process.env.REACT_APP_WEATHER_API_KEY);
   return (
     <div className="container">
       <h1 className="main-title">Warsaw</h1>
