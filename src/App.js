@@ -5,7 +5,7 @@ import { WEATHER_API_URL, WEATHER_API_KEY, warsawLat, warsawLon } from "./api";
 function App() {
   useEffect(() => {
     fetch(
-      `${WEATHER_API_URL}/weather?lat=${warsawLat}&lon=${warsawLon}&appid=${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}/weather?lat=${warsawLat}&lon=${warsawLon}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => console.log(data));
