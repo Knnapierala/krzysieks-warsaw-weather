@@ -10,12 +10,10 @@ function App() {
       .then((response) => response.json())
       .then((data) => console.log(data));
   }, []);
-  console.log(process.env.REACT_APP_WEATHER_API_KEY);
   return (
     <div className="container">
       <h1 className="main-title">Warsaw</h1>
     </div>
   );
 }
-
 export default App;
