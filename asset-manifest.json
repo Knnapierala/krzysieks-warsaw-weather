@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/krzysieks-warsaw-weather/static/css/main.073c9b0a.css",
+    "main.js": "/krzysieks-warsaw-weather/static/js/main.b486c201.js",
+    "static/js/787.0371b211.chunk.js": "/krzysieks-warsaw-weather/static/js/787.0371b211.chunk.js",
+    "static/media/logo.svg": "/krzysieks-warsaw-weather/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/krzysieks-warsaw-weather/index.html",
+    "main.073c9b0a.css.map": "/krzysieks-warsaw-weather/static/css/main.073c9b0a.css.map",
+    "main.b486c201.js.map": "/krzysieks-warsaw-weather/static/js/main.b486c201.js.map",
+    "787.0371b211.chunk.js.map": "/krzysieks-warsaw-weather/static/js/787.0371b211.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.b486c201.js"
+  ]
+}
