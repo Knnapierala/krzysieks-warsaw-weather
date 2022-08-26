@@ -1,0 +1,13 @@
+.section {
+  background-color: aqua;
+}
+
+.section-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-top .temp {
+  font-size: 3rem;
+  margin-right: 30px;
+}
