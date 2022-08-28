@@ -1,13 +1,36 @@
 .section {
-  background-color: aqua;
+  background-color: rgb(121, 136, 136);
+  width: 400px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(203, 189, 189, 0.7);
 }
 
 .section-top {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .section-top .temp {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-right: 30px;
+  text-align: center;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon p {
+  text-transform: uppercase;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5rem;
+}
+.info .info-name {
+  font-weight: 600;
 }
