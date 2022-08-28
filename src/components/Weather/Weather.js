@@ -3,8 +3,7 @@ import "./weather.css";
 
 const Weather = ({ main, weather, wind }) => {
   const { temp } = main;
-  const iconID = weather[0].icon;
-  const iconLink = `http://openweathermap.org/img/wn/${iconID}@2x.png`;
+  const iconLink = `http://openweathermap.org/img/wn/${weather[0].icon}.png`;
 
   return (
     <section className="section">
