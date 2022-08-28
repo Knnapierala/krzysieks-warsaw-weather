@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { WEATHER_API_URL, warsawLat, warsawLon } from "./api";
 import Weather from "./components/Weather/Weather";
+import Header from "./components/Header/Header";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [warsawWeather, setWarsawWeather] = useState({});
   const date = new Date();
-  console.log(warsawWeather);
   const { name, main, weather, wind } = warsawWeather;
 
   useEffect(() => {
@@ -32,8 +32,7 @@ function App() {
   }
   return (
     <main className="container">
-      <h1 className="main-title">{name}</h1>
-      <h2>Today is: {date.toString().slice(0, 15)}</h2>
+      <Header name={name} date={date} />
       <Weather weather={weather} main={main} wind={wind} />
     </main>
   );

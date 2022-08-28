@@ -4,6 +4,7 @@
   border-radius: 15px;
   padding: 10px;
   box-shadow: 5px 5px 10px rgba(203, 189, 189, 0.7);
+  box-sizing: border-box;
 }
 
 .section-top {
