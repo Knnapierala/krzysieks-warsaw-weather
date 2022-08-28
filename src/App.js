@@ -16,7 +16,8 @@ function App() {
     )
       .then((response) => response.json())
       .then((data) => setWarsawWeather(data))
-      .then(() => setIsLoading(false));
+      .then(() => setIsLoading(false))
+      .catch((err) => console.log(err));
   }, []);
   // useEffect(async () => {
   //   const response = await fetch(
